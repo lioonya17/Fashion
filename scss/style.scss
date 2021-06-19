@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "null";
+
+//--------------- vars ---------------//
+
+$primary: #22262A;
+$sell-red: #CF2929;
+$white: #ffffff;
+
+//--------------- blocks ---------------//
+
+@import "blocks/page";
+@import "blocks/wrapper";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/gallery";
+@import "blocks/women";
+@import "blocks/title";
+@import "blocks/card";
+@import "blocks/man";
+@import "blocks/avone";
+@import "blocks/tachen";
+@import "blocks/footer";
+@import "blocks/right";

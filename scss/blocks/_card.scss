@@ -1,0 +1,65 @@
+.card {
+    margin: 0 auto 30px;
+
+    &__preview {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 40px;
+        position: relative;
+
+        &::after {
+            content: '';
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+
+        &:hover {
+            &::after {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                background-image: linear-gradient(to left, rgba(#000, .4), rgba(#000, .6));
+                opacity: .8;
+            }
+        }
+
+        &::before {
+            content: '';
+            opacity: 0;
+            transition: opacity .5s;
+        }
+    }
+    &__cat {
+        font-weight: 300;
+        color: $primary;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 15px;
+        color: $primary;
+        margin-bottom: 10px;
+    }
+
+    &__price {
+        display: flex;
+        font-size: 15px;
+
+        &-black {
+            color: $primary;
+            text-decoration: line-through;
+            margin-right: 40px;
+        }
+
+        &-red {
+            color: $sell-red;
+        }
+    }
+}

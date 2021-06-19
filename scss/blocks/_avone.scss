@@ -1,0 +1,53 @@
+.avone {
+    padding-top: 90px;
+
+    &__header {
+        margin-bottom: 60px;
+    }
+
+    &__inner {
+        display: flex;
+        width: 100%;
+    }
+
+    &__left {
+        padding-top: 87px;
+        width: 50%;
+        margin-right: 30px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        position: relative;
+    }
+
+    &__down {
+        margin-right: 38px;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__up {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        border-left: 25px solid $white;
+        border-top: 22px solid $white;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

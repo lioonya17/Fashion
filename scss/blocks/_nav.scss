@@ -1,0 +1,28 @@
+.nav {
+
+    &__link {
+        margin: 0 15px;
+        text-decoration: none;
+        color: $primary;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            background-color: $primary;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            transition: width .35s linear;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.intro {
+    padding-top: 820px;
+    
+    &__content {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        margin-bottom: 100px;
+    } 
+
+    &__subtitle, &__text {
+        font-size: 18px;
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            font-size: 70px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 34px;
+    }
+
+    &__btn {
+        background-color: $white;
+        color: $primary;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-right: 34px;
+        transition: color .2s linear, background-color .2s linear;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.right {
+    text-align: center;
+    padding: 35px 0;
+    background-color: #E7F5F8;
+    &__title {
+        color: $primary;
+        font-size: 15px;
+    }
+}
